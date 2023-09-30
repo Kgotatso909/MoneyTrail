@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MoneyTrail - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header">
+        <h1>MoneyTrail</h1>
+        <ul class="social-media-icons">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    </header>
+
+    <section id="calenar" class="section">
+        <body>
+    <table>
+        <thead>
+            <tr>
+                <td onclick="decrementMonth()">«</td>
+                <th colspan="5" id="month-year"></th>
+                <td onclick="incrementMonth()">»</td>
+            </tr>
+        </thead>
+        <thead class="day">
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody id="calendar-body">
+            <!-- JavaScript will populate this section -->
+        </tbody>
+    </table>
+    <div class="popup-container" id="popup-container">
+        <div class="popup" id="popup">
+            <h3>Edit Note</h3>
+            <textarea id="noteText"></textarea>
+            <button onclick="saveNote()">Save</button>
+        </div>
+    </div>
+    </section>
+
+    <section id="expense" class="section">
+        <h2>Expense Logging</h2>
+    </section>
+
+    <section id="budget" class="section">
+        <h2>Budget Setting</h2>
+        <!-- Budget Setting Section Content -->
+    </section>
+
+    <section id="overspending" class="section">
+        <h2>Overspending Identifier</h2>
+        <!-- Overspending Identifier Section Content -->
+    </section>
+
+    <section id="income-tracker" class="section">
+        <h2>Income tracking</h2>
+        <!-- Income tracking -->
+    </section>
+
+    <section id="reports" class="section">
+        <h2>Reports & Analytics</h2>
+        <!-- Reports & Analytics Section Content -->
+    </section>
+
+    <footer class="footer">
+        <!-- Footer Content -->
+    </footer><footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>MoneyTrail is your trusted financial management and expense tracking platform. Our mission is to simplify your financial journey and help you achieve your financial goals.</p>
+    </div>
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or need assistance, feel free to get in touch with us.</p>
+      <p>Email: service@moneytrail.com</p>
+      <p>Phone: 082-123-4567</p>
+    </div>
+</footer>
+
+    <script src="main.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>

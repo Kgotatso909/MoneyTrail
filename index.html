@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<link rel="stylesheet" href="loginstyles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoneyTrail</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h1>MoneyTrail</h1>
-  <div class="container">
-  	<p>Create new account</p>
-  	<p>Already have an acount? <a href="#">Sign In</a></p>
-  	<form>
-  		<input type="email" name="email" placeholder="tg@gmail.com">
-  		<input type="password" name="password" placeholder="*************">
-  		<input type="password" placeholder="*************">
-  		<input type="submit" value="Create Account">
-
-  	 <p>Or continue with</p>
-    <div class="social-login">
-      <a href="#">
-        <img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" alt="Google Sign In">
-      </a>
-  	</form>
+  <header class="header">
+    <h1>MoneyTrail</h1>
+    <ul class="social-media-icons">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+  </header>
+  <div class="intro">
+      <h2>Track your Expenses Efficiently</h2>
+      <p>Manage your finances with ease using our expense tracker. Keep track of your spending habits and save money</p>
+      <button id="startBtn">Get Started</button>
   </div>
+  <div id="about">
+    <div id="intro-content">
+     <p> MoneyTrail - your ultimate financial management expense tracker. Based in Mafikeng, NW, we help you keep track of your expenses effortlessly. With our user-friendly interface and intuitive features, you can easily categorize your expenses, set budgets, and track your spending in real-time.</p>
+     <p> Say goodbye to the hassle of manually tracking your finances and let MoneyTrail do the heavy lifting for you. Whether you're an individual or a business, our platform is designed to simplify your financial management and help you achieve your financial goals. Try MoneyTrail today and take control of your finances like never before. </p>
+    </div>
+  </div>
+  <div id="service">
+    <div class="service-card" id="service1">
+      <img src="images/service1.jpg" alt="Service 1 Image" class="service-image">
+       <h3>Expense Analysis</h3>
+       <p> Comprehensive analysis of your expenses to identify savings opportunities and optimize your budget. </p>
+    </div>
+    <div class="service-card" id="service2">
+      <img src="images/service2.jpg" alt="Service 2 Image" class="service-image">
+      <h3>Financial Reporting</h3>
+      <p> Accurate and detailed financial reports to track your expenses, income, and financial performance. </p>
+    </div>
+    <div class="service-card" id="service3">
+      <img src="images/service3.jpg" alt="Service 3 Image" class="service-image">
+      <h3> Budget Planning </h3>
+      <p> Expert assistance to efficiently plan your finances and achieve your financial goals. </p>
+    </div>
+</div>
+<div class="clearfix" id="location">
+      <p>Location <br/> Mafikeng, NW</p>
+      <a href="https://www.google.com/maps/place/North+West+University+Mahikeng/@-25.8281303,25.6062348,17z/data=!4m6!3m5!1s0x1ea2cb9c3d89f5b3:0xf0a490b9babf2c4d!8m2!3d-25.8278213!4d25.6079121!16s%2Fm%2F0gvfd_h?entry=ttu"><img src="images/location.jpg" alt="a map of Mafikeng"></a>
+</div>
+<div id="contact">
+  <h3>Contact Us Now</h3>
+  <p>Complete the form below to get in touch with us. We are here to answer any questions you may have and provide the best financial management and expense tracking solutions for your business.</p>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>MoneyTrail is your trusted financial management and expense tracking platform. Our mission is to simplify your financial journey and help you achieve your financial goals.</p>
+    </div>
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>If you have any questions or need assistance, feel free to get in touch with us.</p>
+      <p>Email: service@moneytrail.com</p>
+      <p>Phone: 082-123-4567</p>
+    </div>
+</footer>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
